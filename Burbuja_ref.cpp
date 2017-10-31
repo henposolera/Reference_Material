@@ -39,6 +39,6 @@ void ordenamientoBurbuja(int* arreglo, const int tamano) {
 // intercambia valores en localidades de memoria a los que apuntan ptrElement1 y ptrElement2
 void intercambio(int* const ptrElement1, int* const ptrElement2) {
   int mantiene = *ptrElement1;
-  *ptrElement1 =*ptrElement2;
+  *ptrElement1 = *ptrElement2;
   *ptrElement2 = mantiene;
 }
