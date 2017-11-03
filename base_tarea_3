@@ -1,0 +1,22 @@
+  int main(int argc, char const *argv[]) {
+    cout << "Ingrese una palabra: " << flush;
+    string x;
+    getline(cin,x );
+    cout << x.length() << endl;
+    cout << x << endl;
+    cout << "Ingrese otra palabra: " << flush;
+    string y;
+    getline(cin,y );
+    cout << y.length() << endl;
+    cout << y << endl;
+    string z;
+    z = x+y;
+    cout << z << endl;
+    cout << z.length() << endl;
+    int tamano = z.length() + 1;
+    char *t = new char[z.length() + 1];
+    strcpy(t,z.c_str());
+    for (int i=0; i<tamano;i++){
+      cout << t[i];
+    return 0;
+  }
